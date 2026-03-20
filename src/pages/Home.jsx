@@ -115,7 +115,7 @@ function Home() {
                 </Link>
               ))
             ) : (
-              <p className="text-gray-500">No temples found</p>
+              <p className="text-gray-800">No temples found</p>
             )}
           </div>
         </div>

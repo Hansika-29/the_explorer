@@ -44,24 +44,6 @@ function State() {
         </p>
       </div>
 
-      {/* 🗺️ MAP */}
-      {temples.length > 0 && (
-        <div className="max-w-6xl mx-auto mb-10">
-          <h2 className="text-xl font-semibold mb-4 text-gray-700">
-            Temple Locations
-          </h2>
-
-          <div className="w-full h-96">
-            <iframe
-              className="w-full h-full rounded-xl shadow"
-              src={`https://www.google.com/maps?q=${temples
-                .map((t) => `${t.location.lat},${t.location.lng}`)
-                .join("|")}&output=embed`}
-            ></iframe>
-          </div>
-        </div>
-      )}
-
       {/* 🔍 FILTERS */}
       <div className="max-w-6xl mx-auto flex flex-wrap gap-3 justify-center mb-6">
         {["all", "shiva", "vishnu", "devi"].map((type) => (
